@@ -4,7 +4,7 @@ set -eu
 readonly DATA_DIR="/bootstrap/data"
 readonly CONFIG_DIR="/bootstrap/config"
 
-readonly LDAP_DOMAIN=planetexpress.com
+readonly LDAP_DOMAIN=ldap.amitthk.com
 readonly LDAP_ORGANISATION="Planet Express, Inc."
 readonly LDAP_BINDDN="cn=admin,dc=ldap,dc=amitthk,dc=com"
 readonly LDAP_SECRET=GoodNewsEveryone

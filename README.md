@@ -2,7 +2,7 @@
 
 ![Docker Build Status](https://img.shields.io/docker/build/rroemhild/test-openldap.svg) ![Docker Stars](https://img.shields.io/docker/stars/rroemhild/test-openldap.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/rroemhild/test-openldap.svg)
 
-This image provides an OpenLDAP Server for testing LDAP applications, i.e. unit tests. The server is initialized with the example domain `planetexpress.com` with data from the [Futurama Wiki][futuramawikia].
+This image provides an OpenLDAP Server for testing LDAP applications, i.e. unit tests. The server is initialized with the example domain `ldap.amitthk.com` with data from the [Futurama Wiki][futuramawikia].
 
 Parts of the image are based on the work from Nick Stenning [docker-slapd][slapd] and Bertrand Gouny [docker-openldap][openldap].
 
@@ -66,8 +66,8 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | employeeType     | Founder |
 | givenName        | Hubert |
 | jpegPhoto        | JPEG-Photo (630x507 Pixel, 26780 Bytes) |
-| mail             | professor@planetexpress.com |
-| mail             | hubert@planetexpress.com |
+| mail             | professor@ldap.amitthk.com |
+| mail             | hubert@ldap.amitthk.com |
 | ou               | Office Management |
 | title            | Professor |
 | uid              | professor |
@@ -86,7 +86,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | employeeType     | Delivery boy |
 | givenName        | Philip |
 | jpegPhoto        | JPEG-Photo (429x350 Pixel, 22132 Bytes) |
-| mail             | fry@planetexpress.com |
+| mail             | fry@ldap.amitthk.com |
 | ou               | Delivering Crew |
 | uid              | fry |
 | userPassword     | fry |
@@ -104,7 +104,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | employeeType     | Doctor |
 | givenName        | John |
 | jpegPhoto        | JPEG-Photo (343x280 Pixel, 26438 Bytes) |
-| mail             | zoidberg@planetexpress.com |
+| mail             | zoidberg@ldap.amitthk.com |
 | ou               | Staff |
 | title            | Ph. D. |
 | uid              | zoidberg |
@@ -121,7 +121,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | employeeType     | Bureaucrat |
 | employeeType     | Accountant |
 | givenName        | Hermes |
-| mail             | hermes@planetexpress.com |
+| mail             | hermes@ldap.amitthk.com |
 | ou               | Office Management |
 | uid              | hermes |
 | userPassword     | hermes |
@@ -138,7 +138,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | employeeType     | Pilot |
 | givenName        | Leela |
 | jpegPhoto        | JPEG-Photo (429x350 Pixel, 26526 Bytes) |
-| mail             | leela@planetexpress.com |
+| mail             | leela@ldap.amitthk.com |
 | ou               | Delivering Crew |
 | uid              | leela |
 | userPassword     | leela |
@@ -154,7 +154,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | employeeType     | Ship's Robot |
 | givenName        | Bender |
 | jpegPhoto        | JPEG-Photo (436x570 Pixel, 26819 Bytes) |
-| mail             | bender@planetexpress.com |
+| mail             | bender@ldap.amitthk.com |
 | ou               | Delivering Crew |
 | uid              | bender |
 | userPassword     | bender |
@@ -170,7 +170,7 @@ Amy has a multi-valued DN
 | sn               | Kroker |
 | description      | Human |
 | givenName        | Amy |
-| mail             | amy@planetexpress.com |
+| mail             | amy@ldap.amitthk.com |
 | ou               | Intern |
 | uid              | amy |
 | userPassword     | amy |
