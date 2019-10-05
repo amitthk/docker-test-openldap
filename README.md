@@ -45,15 +45,15 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 
 ## LDAP structure
 
-### dc=planetexpress,dc=com
+### dc=ldap,dc=amitthk,dc=com
 
 | Admin            | Secret           |
 | ---------------- | ---------------- |
-| cn=admin,dc=planetexpress,dc=com | GoodNewsEveryone |
+| cn=admin,dc=ldap,dc=amitthk,dc=com | GoodNewsEveryone |
 
-### ou=people,dc=planetexpress,dc=com
+### ou=people,dc=ldap,dc=amitthk,dc=com
 
-#### cn=Hubert J. Farnsworth,ou=people,dc=planetexpress,dc=com
+#### cn=Hubert J. Farnsworth,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
@@ -74,7 +74,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | userPassword     | professor |
 
 
-### cn=Philip J. Fry,ou=people,dc=planetexpress,dc=com
+### cn=Philip J. Fry,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
@@ -92,7 +92,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | userPassword     | fry |
 
 
-### cn=John A. Zoidberg,ou=people,dc=planetexpress,dc=com
+### cn=John A. Zoidberg,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
@@ -110,7 +110,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | uid              | zoidberg |
 | userPassword     | zoidberg |
 
-### cn=Hermes Conrad,ou=people,dc=planetexpress,dc=com
+### cn=Hermes Conrad,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
@@ -126,7 +126,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | uid              | hermes |
 | userPassword     | hermes |
 
-### cn=Turanga Leela,ou=people,dc=planetexpress,dc=com
+### cn=Turanga Leela,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
@@ -143,7 +143,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | uid              | leela |
 | userPassword     | leela |
 
-### cn=Bender Bending Rodríguez,ou=people,dc=planetexpress,dc=com
+### cn=Bender Bending Rodríguez,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
@@ -159,7 +159,7 @@ docker run --privileged -d -p 389:389 rroemhild/test-openldap
 | uid              | bender |
 | userPassword     | bender |
 
-### cn=Amy Wong+sn=Kroker,ou=people,dc=planetexpress,dc=com
+### cn=Amy Wong+sn=Kroker,ou=people,dc=ldap,dc=amitthk,dc=com
 
 Amy has a multi-valued DN
 
@@ -175,21 +175,21 @@ Amy has a multi-valued DN
 | uid              | amy |
 | userPassword     | amy |
 
-### cn=admin_staff,ou=people,dc=planetexpress,dc=com
+### cn=admin_staff,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
 | objectClass      | Group |
 | cn               | admin_staff |
-| member           | cn=Hubert J. Farnsworth,ou=people,dc=planetexpress,dc=com |
-| member           | cn=Hermes Conrad,ou=people,dc=planetexpress,dc=com |
+| member           | cn=Hubert J. Farnsworth,ou=people,dc=ldap,dc=amitthk,dc=com |
+| member           | cn=Hermes Conrad,ou=people,dc=ldap,dc=amitthk,dc=com |
 
-### cn=ship_crew,ou=people,dc=planetexpress,dc=com
+### cn=ship_crew,ou=people,dc=ldap,dc=amitthk,dc=com
 
 | Attribute        | Value            |
 | ---------------- | ---------------- |
 | objectClass      | Group |
 | cn               | ship_crew |
-| member           | cn=Turanga Leela,ou=people,dc=planetexpress,dc=com |
-| member           | cn=Philip J. Fry,ou=people,dc=planetexpress,dc=com |
-| member           | cn=Bender Bending Rodríguez,ou=people,dc=planetexpress,dc=com |
+| member           | cn=Turanga Leela,ou=people,dc=ldap,dc=amitthk,dc=com |
+| member           | cn=Philip J. Fry,ou=people,dc=ldap,dc=amitthk,dc=com |
+| member           | cn=Bender Bending Rodríguez,ou=people,dc=ldap,dc=amitthk,dc=com |
